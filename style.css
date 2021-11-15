@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+#character{
+    position: relative;
+    /* top: 130px;  */
+    right: 9300px;
+    /* margin-left: 20px; */
+    transform: rotateY(180deg);
+    animation: character 3s infinite linear;
+    /* game height - character height (200 - 50) */
+}
+@keyframes character{
+    0%{top: 180px} 
+    50%{top: 120px}
+    100%{top: 180px}
+
+}
+
+#knight {
+    position: relative;
+    left: 1050px;
+}
+
+#knight1 {
+    position: relative;
+    left: 2475px;
+    display: block;
+    margin-bottom: 200px;
+}
+
+body {
+    background-image: url('dungeon.png');
+    background-repeat: repeat-x;
+    background-size: 100%;
+    color:white;
+    width: 10000px;
+}
+
+button {
+    background-color:darkslategrey;
+    font-size: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Road Rage', cursive;
+}
+
+footer {
+    background-color: black;
+}
+
+.button1 {
+	display: inline-block;
+}
+
+#start {
+    position:absolute;
+    left: 100px;
+    top: 300px;
+}
+
+.container{
+    margin : 20px auto;
+    position: relative;
+    display: inline-block;
+}
+#start:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+
