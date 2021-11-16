@@ -23,7 +23,17 @@ function posPrompt(){
     }
 }
 
-
+function change(){
+    let btn = document.getElementById("startButton");
+    if (btn.value=="Enter the Dungeon"){ 
+        btn.value = "Exit the Dungeon"
+    }
+    else btn.value = "Exit the Dungeon";
+    }
+    function stop(){
+        change();
+        
+    }
 
 // collision();
 // // start button
