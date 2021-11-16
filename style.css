@@ -2,7 +2,9 @@ html {
     scroll-behavior: smooth;
   }
 
-
+#game{
+    width: 100%;
+}
 #character{
     position: relative;
     /* top: 130px;  */
@@ -35,9 +37,11 @@ body {
     background-image: url('dungeon.png');
     background-repeat: repeat-x;
     background-size: 100%;
+    background-position-y: 100%;
     width: 10000px;
     border-top: black;
     border-top-width: 100px;
+    height: 100%;
 }
 
 #startButton {
@@ -75,27 +79,34 @@ footer {
     display: inline-block;
 }
 #question{
-    display: inline-block;
-    position: -webkit-sticky;
-    position: sticky;
-    left:350px;
+    /* display: inline-block; */
+    /* position: -webkit-sticky; */
+    /* position: sticky; */
+    /* left:350px; */
 }
-#quest-container{
+.quest-container{
 border: blanchedalmond;
 border-style: dashed;
+display:list-item;
+display: inline-block;
+margin-top: 1px;
+}
+.quest-container li{
+    position: relative;
+    color: cadetblue;
 }
 .answers:hover {
     color: rgb(240, 121, 10);
 }
-.answers:nth-child(1){
+/* .answers:nth-child(1){
     display: inline-block;
     position: -webkit-sticky;
     position: sticky;
     left:350px;
 
+ */
 
-
-}
+/* }
 
 .answers:nth-child(2){
     display: inline-block;
@@ -120,5 +131,5 @@ border-style: dashed;
     left:450px;
 
 
-}
+} */
 

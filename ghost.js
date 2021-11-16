@@ -1,9 +1,9 @@
 
 let keyPress = 0;
+// addEventListeners();
 
 function detectKey(e) {
   let posLeft = document.getElementById("spooky").offsetLeft;
-//   let btn = document.getElementById("startButton");
   e = e || window.event;
 
   if (e.keyCode == "37") {
@@ -13,9 +13,7 @@ function detectKey(e) {
     document.getElementById("spooky").style.marginLeft = posLeft - 38 + "px";
     keyPress++;
   }
-//   else if (btn.value == "Enter the Dungeon"){
-//       return;
-//   }
+
   console.log(keyPress);
 
   posPrompt();
@@ -27,9 +25,12 @@ function change(){
     document.onkeydown = detectKey;
     if (btn.value == "Enter the Dungeon"){ 
         btn.value = "Exit the Dungeon"
+        document.onkeydown === false
     }
     else {
         stop();
+        
+        
     }
 }
 
@@ -37,11 +38,23 @@ function change(){
     let btn = document.getElementById("startButton");
         if (btn.value == "Exit the Dungeon"){ 
             btn.value = "Enter the Dungeon"
-        }
-        else { 
+            }
+        else 
             (btn.value == "Enter the Dungeon")
-        }  
+                
+          
     }
+    // function addEventListeners(){
+
+    //         const container = document.documentElement;
+    //         container.addEventListener('keydown' , detectKey);
+        
+    //     }
+
+    // function stopEventListeners() {
+    //     const container = document.documentElement;
+    //     container.removeEventListener('keydown', detectKey);
+    // }
         
   
 
