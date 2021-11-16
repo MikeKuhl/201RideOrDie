@@ -17,7 +17,7 @@ function detectKey(e) {
   posPrompt();
 }
 
-<<<<<<< HEAD
+
 function change(){
     let btn = document.getElementById("startButton");
     if (btn.value=="Enter the Dungeon"){ 
@@ -25,18 +25,23 @@ function change(){
     }
     else btn.value = "Exit the Dungeon";
     }
+
     function stop(){
-        change();
+    let btn = document.getElementById("startButton");
+        if (btn.value=="Exit the Dungeon"){ 
+            btn.value = "Enter the Dungeon"
+        }
+        else btn.value = "Enter the Dungeon";
+        }
         
-    }
-=======
+  
+
 function posPrompt() {
   if (keyPress == 16) {
     console.log("working");
     showQuestion(question);
   }
 }
->>>>>>> 52cba889036a51ff08610d45602446c5e7448d63
 
 // collision();
 // // start button
