@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background-image: url('dungeon.png');
+    background-image: url('./../dungeon.png');
     background-repeat: repeat-x;
     background-size: 100%;
     background-position-y: 100%;
@@ -129,7 +129,11 @@ margin-top: 1px;
     position: -webkit-sticky;
     position: sticky;
     left:450px;
+<<<<<<< HEAD:style.css
 
 
 } */
+=======
+}
+>>>>>>> 978a7d9f43f8e867d7b5574bc6368462ea61d4b9:styles/style.css
 

@@ -1,0 +1,24 @@
+#startpage-body {
+  background-color: black
+}
+
+#start-button-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+    background-color:darkslategrey;
+    font-size: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Road Rage', cursive;
+}
+
+button:hover{
+  background: red;
+  transform: scale(1.3);
+}
