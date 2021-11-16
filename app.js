@@ -1,11 +1,30 @@
-const start = document.getElementById("button 1");
-const quiz = document.getElementById("quiz");
-const question = document.getElementById("question");
-const qImg = document.getElementById("qImg");
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-const counter = document.getElementById("counter");
-const timeGauge = document.getElementById("timeGauge");
-const progress = document.getElementById("progress");
-const scoreDiv = document.getElementById("scoreContainer");
+// existing code
+let question = {
+  title: "gato",
+  answers: ["dog", "cat", "bird", "fish"],
+  correctAnswer: 1,
+};
+// existing code
+function showQuestion(q) {
+  // existing code
+  let titleDiv = document.getElementById("title");
+  titleDiv.textContent = q.title;
+
+  // existing code
+  let alts = document.querySelectorAll(".alternative");
+
+  // modified code
+  alts.forEach(function (element, index) {
+    // existing code
+    element.textContent = q.answers[index];
+    // new code
+    element.addEventListener("click", function () {
+      if (q.correctAnswer == index) {
+        console.log("Correct Answer!");
+      } else {
+        console.log("Wrong Answer!");
+      }
+    });
+  });
+}
+showQuestion(question);
