@@ -36,6 +36,7 @@ function change(){
         }
         else {
             btn.value = "Enter the Dungeon";
+            
         }
     }
         
