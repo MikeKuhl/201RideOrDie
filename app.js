@@ -1,9 +1,23 @@
 //questions
 
 let question = {
-  question: "gato",
-  answers: ["dog", "cat", "bird", "fish"],
-  correctAnswer: 1,
+  question: "The 'function' and 'var' are known as:",
+  answers: ["Keywords", "Data types", "Declaration statements", "Prototypes"],
+  correctAnswer: 2,
+};
+
+let question2 = {
+  question:
+    "Which one of the following is the correct way for calling the JavaScript code?",
+  answers: ["Preprocessor", "Triggering Event", "DRMI", "Function/Method"],
+  correctAnswer: 3,
+};
+
+let question3 = {
+  question:
+    'Choose the correct snippet from the following to check if the variable "a" is not equal the "NULL":',
+  answers: ["if(a!==null)", "if (a!)", "if(a!null)", "if(a!=null)"],
+  correctAnswer: 0,
 };
 
 function showQuestion(q) {
