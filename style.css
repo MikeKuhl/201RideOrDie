@@ -13,7 +13,7 @@ html {
     /* game height - character height (200 - 50) */
 }
 @keyframes character{
-    0%{top: 180px} 
+    0%{top: 180px}
     50%{top: 120px}
     100%{top: 180px}
 
@@ -71,11 +71,47 @@ button:hover{
     position: relative;
     display: inline-block;
 }
+#question{
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:350px;
+}
 
-.alternative:hover {
+.answers:hover {
     color: rgb(240, 121, 10);
 }
-.alternative{
+.answers:nth-child(1){
     display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:350px;
+
+
+}
+
+.answers:nth-child(2){
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:300px;
+
+
+}
+.answers:nth-child(3){
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:400px;
+
+
+}
+.answers:nth-child(4){
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:450px;
+
+
 }
 
