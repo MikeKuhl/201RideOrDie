@@ -17,7 +17,7 @@ let question3 = {
   question:
     'Choose the correct snippet from the following to check if the variable "a" is not equal the "NULL":',
   answers: ["if(a!==null)", "if (a!)", "if(a!null)", "if(a!=null)"],
-  correctAnswer: 3,
+  correctAnswer: 0,
 };
 
 function showQuestion(q) {
