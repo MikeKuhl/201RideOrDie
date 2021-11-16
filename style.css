@@ -50,6 +50,8 @@ button {
 
 footer {
     background-color: black;
+    height: 50px;
+    width: auto;
 }
 
 .button1 {
@@ -72,4 +74,5 @@ footer {
     color : lightseagreen;
 }
 
-
+  
+ 
