@@ -22,3 +22,40 @@ button:hover{
   background: red;
   transform: scale(1.3);
 }
+
+.torch-image {
+  background-image: url('./../torch.png');
+  height: 100px;
+  width: 90px;
+  margin: 20px;
+}
+
+.pulse {
+  background: transparent;
+}
+
+.pulse::after {
+  /* content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #fff; */
+  animation: pulse 0.4s ease infinite alternate;
+  /* z-index: -1; */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    border-radius: 45%;
+  }
+}
