@@ -35,8 +35,9 @@ body {
     background-image: url('dungeon.png');
     background-repeat: repeat-x;
     background-size: 100%;
-    color:white;
     width: 10000px;
+    border-top: black;
+    border-top-width: 100px;
 }
 
 button {
@@ -51,7 +52,10 @@ button {
 footer {
     background-color: black;
 }
-
+button:hover{
+    background: red;
+    transform: scale(1.3);
+}
 .button1 {
 	display: inline-block;
 }
@@ -66,10 +70,6 @@ footer {
     margin : 20px auto;
     position: relative;
     display: inline-block;
-}
-#start:hover{
-    border: 3px solid lightseagreen;
-    color : lightseagreen;
 }
 
 
