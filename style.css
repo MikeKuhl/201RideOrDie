@@ -51,6 +51,8 @@ body {
 
 footer {
     background-color: black;
+    height: 50px;
+    width: auto;
 }
 #startButton:hover{
     background: red;
