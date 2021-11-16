@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html { 
     /* background: url('./../dungeon.png') repeat-x ; 
     -webkit-background-size: cover;
@@ -8,7 +9,24 @@ html {
     /* overflow-y:hidden; */
     /* background-image: */
     border-bottom-color: cyan;
+=======
+html {
+    background: url('./../dungeon.png') repeat-x center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
   }
+  html::-webkit-scrollbar {
+    display: none; /*Chrome */
+  }
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+>>>>>>> 5a9bc52f08b681f50eae2cd9a2a77fd6b13c8faa
+  }
+
 #game{
     width: 100%;
 }
@@ -41,12 +59,17 @@ html {
 }
 
 body {
+<<<<<<< HEAD
     background: url('./../dungeon.png') repeat-x ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     /* background-repeat: repeat-x;
+=======
+
+    background-repeat: repeat-x;
+>>>>>>> 5a9bc52f08b681f50eae2cd9a2a77fd6b13c8faa
     background-size: 100%;
     background-position-y: 100%;
     width: 10000px;
