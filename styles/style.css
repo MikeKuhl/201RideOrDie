@@ -1,7 +1,10 @@
-html {
-    scroll-behavior: smooth;
+html { 
+    background: url('./../dungeon.png') repeat-x center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-
 #game{
     width: 100%;
 }
@@ -34,7 +37,7 @@ html {
 }
 
 body {
-    background-image: url('./../dungeon.png');
+    
     background-repeat: repeat-x;
     background-size: 100%;
     background-position-y: 100%;
@@ -129,11 +132,8 @@ margin-top: 1px;
     position: -webkit-sticky;
     position: sticky;
     left:450px;
-<<<<<<< HEAD:style.css
 
 
 } */
-=======
-}
->>>>>>> 978a7d9f43f8e867d7b5574bc6368462ea61d4b9:styles/style.css
+
 
