@@ -14,15 +14,16 @@ function detectKey(e) {
         keyPress++
     } 
     console.log(keyPress)
+    posPrompt();
 }
 
-// function posPrompt(){
-//     if(keyPress == 16){
-//         console.log("working")
-//     }
-// }
+function posPrompt(){
+    if(keyPress == 16){
+        console.log("working")
+    }
+}
 
-// posPrompt();
+
 
 // collision();
 // // start button
