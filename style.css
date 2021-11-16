@@ -47,6 +47,9 @@ button {
     padding: 10px;
     margin: 20px;
     font-family: 'Road Rage', cursive;
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 footer {
@@ -77,7 +80,10 @@ button:hover{
     position: sticky;
     left:350px;
 }
-
+#quest-container{
+border: blanchedalmond;
+border-style: dashed;
+}
 .answers:hover {
     color: rgb(240, 121, 10);
 }
@@ -86,6 +92,7 @@ button:hover{
     position: -webkit-sticky;
     position: sticky;
     left:350px;
+
 
 
 }
