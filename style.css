@@ -13,7 +13,7 @@ html {
     /* game height - character height (200 - 50) */
 }
 @keyframes character{
-    0%{top: 180px} 
+    0%{top: 180px}
     50%{top: 120px}
     100%{top: 180px}
 
@@ -48,6 +48,9 @@ body {
     margin: 20px;
     font-family: 'Road Rage', cursive;
     display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+
 }
 
 footer {
@@ -71,11 +74,51 @@ footer {
     position: relative;
     display: inline-block;
 }
-
-.alternative:hover {
+#question{
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:350px;
+}
+#quest-container{
+border: blanchedalmond;
+border-style: dashed;
+}
+.answers:hover {
     color: rgb(240, 121, 10);
 }
-.alternative{
+.answers:nth-child(1){
     display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:350px;
+
+
+
+}
+
+.answers:nth-child(2){
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:300px;
+
+
+}
+.answers:nth-child(3){
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:400px;
+
+
+}
+.answers:nth-child(4){
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    left:450px;
+
+
 }
 

@@ -1,16 +1,16 @@
 //questions
 
 let question = {
-  title: "gato",
+  question: "gato",
   answers: ["dog", "cat", "bird", "fish"],
   correctAnswer: 1,
 };
 
 function showQuestion(q) {
-  let titleDiv = document.getElementById("title");
-  titleDiv.textContent = q.title;
+  let questionDiv = document.getElementById("question");
+  questionDiv.textContent = q.question;
 
-  let alts = document.querySelectorAll(".alternative");
+  let alts = document.querySelectorAll(".answers");
 
   alts.forEach(function (element, index) {
     element.textContent = q.answers[index];
@@ -24,3 +24,5 @@ function showQuestion(q) {
     });
   });
 }
+
+showQuestion(question);
