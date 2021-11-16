@@ -1,10 +1,19 @@
-html { 
-    background: url('./../dungeon.png') repeat-x center; 
+html {
+    background: url('./../dungeon.png') repeat-x center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
   }
+  html::-webkit-scrollbar {
+    display: none; /*Chrome */
+  }
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 #game{
     width: 100%;
 }
@@ -37,7 +46,7 @@ html {
 }
 
 body {
-    
+
     background-repeat: repeat-x;
     background-size: 100%;
     background-position-y: 100%;
