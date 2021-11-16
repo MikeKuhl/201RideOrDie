@@ -1,9 +1,13 @@
 html { 
-    background: url('./../dungeon.png') repeat-x center; 
+    /* background: url('./../dungeon.png') repeat-x ; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
+    /* border-top: black; */
+    /* overflow-y:hidden; */
+    /* background-image: */
+    border-bottom-color: cyan;
   }
 #game{
     width: 100%;
@@ -37,14 +41,18 @@ html {
 }
 
 body {
-    
-    background-repeat: repeat-x;
+    background: url('./../dungeon.png') repeat-x ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-repeat: repeat-x;
     background-size: 100%;
     background-position-y: 100%;
     width: 10000px;
     border-top: black;
     border-top-width: 100px;
-    height: 100%;
+    height: 100%; */
 }
 
 #startButton {
