@@ -44,8 +44,8 @@ body {
     margin: 20px;
     font-family: 'Road Rage', cursive;
     display: inline-block;
+    margin-left: 50px;
     position: fixed;
-
 }
 
 footer {
