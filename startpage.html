@@ -27,9 +27,19 @@
       <img src="img/torch.png" alt="" class="torch-image">
     </div>
   </div>
+  <div class="backDoor">
+    <div class="door">  
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
   <script>
     const pushbar = new Pushbar({blur: true, overlay: true});
+    let element = document.querySelector(".door");
+element.addEventListener("click", toggleDoor);
+
+function toggleDoor() {
+  element.classList.toggle("doorOpen");
+}
   </script>
 </body>
 </html>
