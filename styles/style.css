@@ -152,6 +152,51 @@ background-color: darkmagenta;
     margin-top: 198px;
 
 }
+.wrapper3 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 1865px;
+    margin-top: 198px;
+
+}
+.wrapper4 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 2579px;
+    margin-top: 190px;
+
+}
+.wrapper5 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 3300px;
+    margin-top: 190px;
+
+}
+.wrapper6 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 4015px;
+    margin-top: 190px;
+
+}
+.wrapper7 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 4725px;
+    margin-top: 190px;
+
+}
 .red {
     width: 80px;
     height: 80px;
