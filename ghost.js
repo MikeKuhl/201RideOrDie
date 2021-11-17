@@ -24,9 +24,11 @@ function detectKey(e) {
 
 
 function change(){
+    let hotbod = document.getElementById('hotbod')
     let btn = document.getElementById("startButton");
     document.onkeydown = detectKey;
     if (btn.value == "Enter the Dungeon"){ 
+        // hotbod.style.overflow = 'hidden' 
         canMove = true;
         btn.value = "Exit the Dungeon"
     }
@@ -36,13 +38,19 @@ function change(){
 }
 
     function stop(){
+    let hotbod = document.getElementById('hotbod')
     let btn = document.getElementById("startButton");
         if (btn.value == "Exit the Dungeon"){ 
             btn.value = "Enter the Dungeon"
+            hotbod.style.overflow = 'auto' 
+            
             }
         else 
             (btn.value == "Enter the Dungeon")
-            canMove = false;  
+            
+            hotbod.style.overflow = 'hidden'
+            canMove = false; 
+           
     }
  
   
@@ -73,20 +81,25 @@ function livesCheck(){
  
 
 function posPrompt() {
+    let hotbod = document.getElementById('hotbod')
   if (keyPress === 21) {
     console.log("working");
     showQuestion(question);
+    hotbod.style.overflow = 'hidden'
     document.getElementById('knight').hidden = false;
     canMove = false;
   } else if (keyPress > 21){
     document.getElementById('knight').hidden = true;
     canMove = true;
+    hotbod.style.overflow = 'auto'
   } else if (keyPress < 21) {
     document.getElementById('knight').hidden = true;
     canMove = true;
+    hotbod.style.overflow = 'auto'
   }
   else {
       canMove = true;
+      hotbod.style.overflow = 'auto'
       return;
   }
   

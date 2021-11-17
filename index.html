@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    <!-- onLoad="window.scroll(0,0) -->
   <head>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -12,14 +13,13 @@
     />
     <title>Code Dungeon</title>
   </head>
-  <body>
+  <body id="hotbod">
       <div id="gameover" hidden>
       <img src="img/gameover.png" id="gameover">
       <button id="restart" onClick="window.location.reload();">Try Again?</button> 
       </div>
     <div class="container">
         <input type="button" value="Enter the Dungeon" onclick="change()" id="startButton">
-    <!-- <button id="button1">Enter the Dungeon</button> -->
     </div>
     <div id="lives">
         <img src="img/heart.png" id="heart1" style="width: 50px; height: 50px">
