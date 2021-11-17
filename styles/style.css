@@ -195,8 +195,56 @@ background-color: darkmagenta;
     display: block;
     margin-left: 4725px;
     margin-top: 190px;
-
 }
+.wrapper8 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 5450px;
+    margin-top: 190px;
+}
+.wrapper9 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 6175px;
+    margin-top: 190px;
+}
+.wrapper10 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 6880px;
+    margin-top: 190px;
+}
+.wrapper11 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 7600px;
+    margin-top: 190px;
+}
+.wrapper12 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 8325px;
+    margin-top: 190px;
+}
+.wrapper13 {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    display: block;
+    margin-left: 9030px;
+    margin-top: 190px;
+}
+
 .red {
     width: 80px;
     height: 80px;
