@@ -94,46 +94,30 @@ function posPrompt() {
   }
   if (keyPress === 5) {
     console.log("working");
-    q2();
+    showQuestion(question2);
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
     canMove = false;
   }
   if (keyPress === 30) {
     console.log("working");
-    q3();
+    showQuestion(question3);
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
     canMove = false;
   }
   if (keyPress === 45) {
     console.log("working");
-    q4();
+    showQuestion(question4);
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
     canMove = false;
   }
   if (keyPress === 60) {
     console.log("working");
-    q5();
+    showQuestion(question5);
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
     canMove = false;
   }
-}
-
-function q2() {
-  showQuestion(question2);
-}
-
-function q3() {
-  showQuestion(question3);
-}
-
-function q4() {
-  showQuestion(question4);
-}
-
-function q5() {
-  showQuestion(question5);
 }
