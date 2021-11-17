@@ -81,7 +81,7 @@ function posPrompt() {
     document.getElementById("knight").hidden = false;
     canMove = false;
   } else if (keyPress > 21) {
-    document.getElementById("knight").hidden = true;
+    document.getElementById("demonboss").hidden = true;
     canMove = true;
     hotbod.style.overflow = "auto";
   } else if (keyPress < 21) {
@@ -103,7 +103,7 @@ function posPrompt() {
     console.log("working");
     q3();
     hotbod.style.overflow = "hidden";
-    document.getElementById("knight").hidden = false;
+    document.getElementById("boss knight").hidden = false;
     canMove = false;
   }
   if (keyPress === 45) {

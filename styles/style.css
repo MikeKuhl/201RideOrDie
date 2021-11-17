@@ -32,9 +32,16 @@
     z-index: 2;
 }
 
-#knight1 {
+#demonboss {
     position: relative;
     left: 2475px;
+    display: block;
+    margin-bottom: 200px;
+}
+
+#bossknight {
+    position: relative;
+    left: 4950px;
     display: block;
     margin-bottom: 200px;
 }
