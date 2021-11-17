@@ -41,10 +41,9 @@ function change(){
             }
         else 
             (btn.value == "Enter the Dungeon")
-            canMove = false;
-                
-          
+            canMove = false;  
     }
+ 
     // function addEventListeners(){
 
     //         const container = document.documentElement;

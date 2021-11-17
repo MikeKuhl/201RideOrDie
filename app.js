@@ -20,6 +20,11 @@ let question3 = {
   correctAnswer: 0,
 };
 
+let question4 = {
+  question:
+  'The symbol used for the assignment operator is?'
+}
+
 function showQuestion(q) {
   let questionDiv = document.getElementById("question");
   questionDiv.textContent = q.question;
