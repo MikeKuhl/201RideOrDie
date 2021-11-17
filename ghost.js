@@ -78,7 +78,6 @@ function livesCheck(){
         }
     }
 }
- 
 
 function posPrompt() {
     let hotbod = document.getElementById('hotbod')
