@@ -32,7 +32,9 @@ function showQuestion(q) {
 
     element.addEventListener("click", function () {
       if (q.correctAnswer == index) {
-        console.log("Correct Answer!");
+        canMove = true;
+        document.getElementById('knight').hidden = true;
+        // console.log("Correct Answer!");
       } else {
         console.log("Wrong Answer!");
       }

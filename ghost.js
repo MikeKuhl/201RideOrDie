@@ -1,8 +1,9 @@
-
+let canMove = true;
 let keyPress = 0;
 // addEventListeners();
 
 function detectKey(e) {
+    if (canMove){
   let posLeft = document.getElementById("spooky").offsetLeft;
   e = e || window.event;
 
@@ -17,6 +18,7 @@ function detectKey(e) {
   console.log(keyPress);
 
   posPrompt();
+        }
 }
 
 
@@ -24,10 +26,12 @@ function change(){
     let btn = document.getElementById("startButton");
     document.onkeydown = detectKey;
     if (btn.value == "Enter the Dungeon"){ 
+        canMove = true;
         btn.value = "Exit the Dungeon"
     }
     else {
         stop();
+        
         
         
     }
@@ -40,6 +44,7 @@ function change(){
             }
         else 
             (btn.value == "Enter the Dungeon")
+            canMove = false;
                 
           
     }
@@ -58,14 +63,17 @@ function change(){
   
 
 function posPrompt() {
-  if (keyPress === 16) {
+  if (keyPress === 21) {
     console.log("working");
     showQuestion(question);
     document.getElementById('knight').hidden = false;
-  } else if (keyPress > 16){
+    canMove = false;
+  } else if (keyPress > 21){
     document.getElementById('knight').hidden = true;
-  } else if (keyPress < 16) {
+    canMove = true;
+  } else if (keyPress < 21) {
     document.getElementById('knight').hidden = true;
+    canMove = true;
   }
   
 }

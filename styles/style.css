@@ -24,8 +24,8 @@
     /* display: inline-block; */
     z-index:-1;
     /* top: 130px;  */
-    /* right: 9300px; */
-    /* margin-left: 200px; */
+    right: 4500px;
+  
     transform: rotateY(180deg);
     animation: character 3s infinite linear;
     /* game height - character height (200 - 50) */
@@ -54,10 +54,13 @@
 body {
 
     background: url('./../dungeon.png') repeat-x ; 
+    background-size: 100%;
+    background-position-y: top;
+    width: 5000px;
     /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
     /* background-repeat: repeat-x;
 
 
