@@ -58,6 +58,7 @@ footer {
     height: 60px;
     width: auto;
 }
+
 #startButton:hover{
     background: red;
     transform: scale(1.3);
@@ -74,27 +75,28 @@ footer {
     position: relative;
     display: inline-block;
 }
+
 #question{
     display: inline-block;
     position: -webkit-sticky;
     position: sticky;
     left:350px;
 }
+
 #quest-container{
 border: blanchedalmond;
 border-style: dashed;
 }
+
 .answers:hover {
     color: rgb(240, 121, 10);
 }
+
 .answers:nth-child(1){
     display: inline-block;
     position: -webkit-sticky;
     position: sticky;
     left:350px;
-
-
-
 }
 
 .answers:nth-child(2){
@@ -102,9 +104,8 @@ border-style: dashed;
     position: -webkit-sticky;
     position: sticky;
     left:300px;
-
-
 }
+
 .answers:nth-child(3){
     display: inline-block;
     position: -webkit-sticky;

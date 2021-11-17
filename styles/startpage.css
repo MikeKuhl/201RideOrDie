@@ -49,3 +49,15 @@ button:hover{
     border-radius: 45%;
   }
 }
+
+body, .pushy {
+	padding: 2em;
+}
+
+[data-pushbar-direction=right] {
+  right: 320px;
+}
+
+/* .pushy {
+  right: 320px;
+} */
