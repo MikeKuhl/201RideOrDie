@@ -15,7 +15,7 @@ button {
     border-radius: 8px;
     padding: 10px;
     margin: 20px;
-    font-family: 'Road Rage', cursive;
+    font-family: 'Road Rage';
 }
 
 button:hover{

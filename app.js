@@ -23,6 +23,7 @@ let question3 = {
 function showQuestion(q) {
   let questionDiv = document.getElementById("question");
   questionDiv.textContent = q.question;
+ 
 
   let alts = document.querySelectorAll(".answers");
 

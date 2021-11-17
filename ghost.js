@@ -25,7 +25,6 @@ function change(){
     document.onkeydown = detectKey;
     if (btn.value == "Enter the Dungeon"){ 
         btn.value = "Exit the Dungeon"
-        document.onkeydown === false
     }
     else {
         stop();
@@ -59,10 +58,16 @@ function change(){
   
 
 function posPrompt() {
-  if (keyPress == 16) {
+  if (keyPress === 16) {
     console.log("working");
     showQuestion(question);
+    document.getElementById('knight').hidden = false;
+  } else if (keyPress > 16){
+    document.getElementById('knight').hidden = true;
+  } else if (keyPress < 16) {
+    document.getElementById('knight').hidden = true;
   }
+  
 }
 
 
