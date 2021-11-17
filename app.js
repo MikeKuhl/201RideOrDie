@@ -41,7 +41,7 @@ let question6 = {
 };
 let question7 = {
   question:
-    'In JavaScript can you use a number as an identifer (name)":',
+    'In JavaScript can you use a number as an identifier (name)":',
   answers: ["True", "False"],
   correctAnswer: 1,
 };
