@@ -7,12 +7,12 @@ function detectKey(e) {
   let posLeft = document.getElementById("spooky").offsetLeft;
   e = e || window.event;
 
-  if (e.keyCode == "37") {
-    document.getElementById("spooky").style.marginLeft = posLeft + 38 + "px";
-    keyPress -= 1;
+    if (e.keyCode == "37") {
+        document.getElementById("spooky").style.marginLeft = posLeft + 38 + "px";
+        keyPress -= 1;
   } else if (e.keyCode == "39") {
-    document.getElementById("spooky").style.marginLeft = posLeft - 38 + "px";
-    keyPress++;
+        document.getElementById("spooky").style.marginLeft = posLeft - 38 + "px";
+        keyPress++;
   }
 
   console.log(keyPress);
@@ -31,10 +31,7 @@ function change(){
     }
     else {
         stop();
-        
-        
-        
-    }
+        }
 }
 
     function stop(){
@@ -75,7 +72,12 @@ function posPrompt() {
     document.getElementById('knight').hidden = true;
     canMove = true;
   }
+  else {
+      canMove = true;
+      return;
+  }
   
 }
+
 
 

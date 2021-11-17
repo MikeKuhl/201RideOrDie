@@ -25,7 +25,7 @@
     z-index:-1;
     /* top: 130px;  */
     right: 4500px;
-  
+    margin-top: 100px;
     transform: rotateY(180deg);
     animation: character 3s infinite linear;
     /* game height - character height (200 - 50) */
@@ -82,8 +82,7 @@ body {
     margin: 20px;
     font-family: 'Road Rage', cursive;
     display: inline-block;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
 
 }
 
