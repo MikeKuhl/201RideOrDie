@@ -114,9 +114,9 @@ background-color: darkmagenta;
     font-family: 'Road Rage', cursive;
     display: inline;
     margin-left: 50px;
-    visibility: hidden;
-    z-index: 2;
-    
+    display: inline-block;
+    z-index: 3;
+    position: relative;
 }
 #restart:hover {
     background-color:green;
