@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 
 <html>
+<<<<<<< HEAD
     <!--  -->
+=======
+  <!-- onLoad="window.scroll(0,0) -->
+>>>>>>> 1608b1dbaea6dfcd7b1e714c509fa0c4d761f340
   <head>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -13,24 +17,38 @@
     />
     <title>Code Dungeon</title>
   </head>
+<<<<<<< HEAD
   <body id="hotbod" onLoad="window.scroll(0,0)">
       <div id="gameover" hidden>
       <img src="img/gameover.png" id="gameover">
       <button id="restart" onClick="window.location.reload();">Try Again?</button> 
       </div>
+=======
+  <body id="hotbod">
+    <div id="gameover" hidden>
+      <img src="img/gameover.png" id="gameover" />
+      <button id="restart" onClick="window.location.reload();">
+        Try Again?
+      </button>
+    </div>
+>>>>>>> 1608b1dbaea6dfcd7b1e714c509fa0c4d761f340
     <div class="container">
-        <input type="button" value="Enter the Dungeon" onclick="change()" id="startButton">
+      <input
+        type="button"
+        value="Enter the Dungeon"
+        onclick="change()"
+        id="startButton"
+      />
     </div>
     <div id="lives">
-        <img src="img/heart.png" id="heart1" style="width: 50px; height: 50px">
-        <img src="img/heart.png" id="heart2" style="width: 50px; height: 50px">
-        <img src="img/heart.png" id="heart3" style="width: 50px; height: 50px">
-        <img src="img/heart.png" id="heart4" style="width: 50px; height: 50px">
+      <img src="img/heart.png" id="heart1" style="width: 50px; height: 50px" />
+      <img src="img/heart.png" id="heart2" style="width: 50px; height: 50px" />
+      <img src="img/heart.png" id="heart3" style="width: 50px; height: 50px" />
+      <img src="img/heart.png" id="heart4" style="width: 50px; height: 50px" />
     </div>
-       
 
     <!-- <iframe width="1px" height="1px" src="https://www.youtube.com/embed/a0Av2XNPd_g?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-    
+
     <!-- <button type="submit" name="startGame" id="start">
             Enter the Dungeon
         </button> -->
@@ -42,25 +60,28 @@
     <div id="game">
       <div id="character">
         <div id="spooky">
-          <img src="img/ghost.png" id="ghost" style="width: 300px; height: 200px" />
+          <img
+            src="img/ghost.png"
+            id="ghost"
+            style="width: 300px; height: 200px"
+          />
         </div>
       </div>
       <div id="knight" hidden>
         <div class="quest-container">
-            <div id="question"></div>
-            <ul>
-              <li class="answers"></li>
-              <li class="answers"></li>
-              <li class="answers"></li>
-              <li class="answers"></li>
-            </ul>
-          </div>
+          <div id="question"></div>
+          <ul>
+            <li class="answers"></li>
+            <li class="answers"></li>
+            <li class="answers"></li>
+            <li class="answers"></li>
+          </ul>
+        </div>
         <img
           src="img/shovel.png"
           alt="knight"
           style="width: 300px; height: 200px"
         />
-        
       </div>
       <div id="knight1">
         <img
@@ -81,7 +102,6 @@
 
       <script src="ghost.js" async defer></script>
       <script src="app.js" async defer></script>
-      <footer></footer>
     </div>
   </body>
 </html>
