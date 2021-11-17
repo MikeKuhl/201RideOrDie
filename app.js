@@ -1,5 +1,6 @@
 //questions
 
+
 let question = {
   question: "The 'function' and 'var' are known as:",
   answers: ["Keywords", "Data types", "Declaration statements", "Prototypes"],
@@ -67,9 +68,7 @@ let question10 = {
 function showQuestion(q) {
   let questionDiv = document.getElementById("question");
   questionDiv.textContent = q.question;
- 
-
-  let alts = document.querySelectorAll(".answers");
+ let alts = document.querySelectorAll(".answers");
 
   alts.forEach(function (element, index) {
     element.textContent = q.answers[index];
@@ -81,9 +80,13 @@ function showQuestion(q) {
         // console.log("Correct Answer!");
       } else {
         console.log("Wrong Answer!");
+        lives -=1
+        livesCheck(); 
+        console.log(lives);
+
       }
     });
   });
 }
 
-showQuestion(question);
+// showQuestion(question);

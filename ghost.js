@@ -1,5 +1,6 @@
 let canMove = true;
 let keyPress = 0;
+let lives = 4;
 // addEventListeners();
 
 function detectKey(e) {
@@ -55,8 +56,34 @@ function change(){
     //     const container = document.documentElement;
     //     container.removeEventListener('keydown', detectKey);
     // }
-        
   
+    const hearts = [document.getElementById('heart1'), document.getElementById('heart2'), document.getElementById('heart3'), document.getElementById('heart4') ]
+    
+function livesCheck(){
+    // let h1 = document.getElementById('heart1')
+    // let h2 = document.getElementById('heart2')
+    for(i = 0; i < hearts.length; i++){
+      if(lives === 3){
+          hearts[0].remove();
+      }
+      else if (lives === 2){
+          hearts[1].remove();
+      }
+    else if( lives === 1){
+        hearts[2].remove();
+       }
+    else if(lives === 0){
+        hearts[3].remove();
+        document.getElementById('gameover').hidden = false;
+        document.getElementById('restart').removeAttribute('hidden');
+
+        }
+        else {
+            console.log('nice')
+        }
+    }
+}
+ 
 
 function posPrompt() {
   if (keyPress === 21) {

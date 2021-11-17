@@ -7,10 +7,17 @@
     transform: rotateY(180deg);
     animation: character 3s infinite linear;
 }
+
+#lives{
+    display: inline;
+    margin-left: 1200px;
+    position: fixed;
+}
+
 @keyframes character{
-    0%{top: 180px}
-    50%{top: 120px}
-    100%{top: 180px}
+    0%{top: 125px}
+    50%{top: 75px}
+    100%{top: 125px}
 
 }
 
@@ -89,5 +96,29 @@ background-color: darkmagenta;
     color: rgb(240, 121, 10);
 }
 
+#gameover {
+    position: fixed; 
+    size: cover;
+    z-index: 1;
+    overflow:hidden;
+    height: 100%;
+    width: 100%;
+}
 
-
+#restart {
+    background-color:rgb(207, 5, 5);
+    font-size: 40px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Road Rage', cursive;
+    display: inline;
+    margin-left: 50px;
+    visibility: hidden;
+    z-index: 2;
+    
+}
+#restart:hover {
+    background-color:green;
+    transform: scale(1.3);
+}
