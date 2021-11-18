@@ -90,7 +90,7 @@ footer {
 }
 
 
-.quest-container{
+#quest-container{
 border: black;
 border-style: solid;
 display:list-item;
@@ -99,7 +99,8 @@ margin-top: 1px;
 background-color: darkslategray;
 padding: 15px;
 }
-.quest-container li{
+
+#quest-container li{
     position: relative;
     color:black;
     padding: 3px;
