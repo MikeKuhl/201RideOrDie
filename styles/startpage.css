@@ -102,3 +102,7 @@ body, .pushy {
 .hidden {
   display: none;
 }
+
+#enter-dungeon {
+  font-size: 20px;
+}
