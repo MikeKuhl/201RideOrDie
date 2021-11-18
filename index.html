@@ -1,312 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-
-  <!-- onLoad="window.scroll(0,0) -->
-
-  <head>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap"
-      rel="stylesheet"
-    />
-    <title>Code Dungeon</title>
-  </head>
-
-  <body id="hotbod" onLoad="window.scroll(0,0)">
-   
-      <div id="gameover" hidden>
-      <img src="img/gameover.png" id="gameover">
-      <button id="restart" onClick="window.location.reload();">Try Again?</button> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles/startpage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+  <title>Code Dungeon</title>
+</head>
+<header></header>
+<body id="startpage-body">
+  <div data-pushbar-id="mypushbar1" data-pushbar-direction="right" class="pushy">
+		<button data-pushbar-close>Close</button>
+    <div>
+      <h1>How To Play:</h1>
+      <ul>
+        <p>How to Play</p>
+        <li>Use left and right arrow keys to move around</li>
+        <li>Answer questions correctly to advance to the next level</li>
+        <li>Answer all questions correctly to escape the dungeon</li>
+      </ul>
+    </div>
+	</div>
+  <div id="start-button-container">
+    <div id="start-button-inner-container">
+      <div class="torch-img-wrapper">
+        <img src="img/torch.png" alt="" class="torch-image" id="left-torch">
       </div>
 
-  <body id="hotbod">
-    <div id="gameover" hidden>
-      <img src="img/gameover.png" id="gameover" />
-      <button id="restart" onClick="window.location.reload();">
-        Try Again?
-      </button>
-    </div>
-
-    <div class="container">
-      <input
-        type="button"
-        value="Enter the Dungeon"
-        onclick="change()"
-        id="startButton"
-      />
-    </div>
-    <div id="lives">
-      <img src="img/heart.png" id="heart1" style="width: 50px; height: 50px" />
-      <img src="img/heart.png" id="heart2" style="width: 50px; height: 50px" />
-      <img src="img/heart.png" id="heart3" style="width: 50px; height: 50px" />
-      <img src="img/heart.png" id="heart4" style="width: 50px; height: 50px" />
-    </div>
-
-    <!-- <iframe width="1px" height="1px" src="https://www.youtube.com/embed/a0Av2XNPd_g?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-    <!-- <button type="submit" name="startGame" id="start">
-            Enter the Dungeon
-        </button> -->
-    <!-- <h3>Use the keyboard to manage your character.</h3>
-        <p>
-        <br /> <b>ARROWS:</b>
-        <br /> LEFT & RIGHT to move forward or backward
-        </p> -->
-    <div id="game">
-        <div class="wrapper">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper1">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper2">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper3">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper4">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper5">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper6">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper7">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper8">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper9">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper10">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper11">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper12">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-        <div class="wrapper13">
-            <div class="flame-wrapper">
-                <div class="flame red"></div>
-                <div class="flame orange"></div>
-                <div class="flame gold"></div>
-                <div class="flame white"></div>
-                <div class="base blue"></div>
-                <div class="base black"></div>
-            </div>
-        </div>
-      <div id="character">
-        <div id="spooky">
-          <img
-            src="img/ghost.png"
-            id="ghost"
-            style="width: 300px; height: 200px"
-          />
-        </div>
-      </div>
-      <div id="knight" hidden>
-        <div class="quest-container">
-          <div id="question"></div>
-          <ul>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-          </ul>
-        </div>
-        <img
-          src="img/shovel.png"
-          alt="knight"
-          style="width: 300px; height: 200px"
-        />
-      </div>
-      <div id="bossknight" hidden>
-        <div class="quest-container">
-          <div id="question"></div>
-          <ul>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-          </ul>
-        </div>
-        <img
-          src="img/bossknight.png"
-          alt="bossknight"
-          style="width: 300px; height: 200px"
-          />
-      </div> 
-
-      <div id="demonboss" hidden>
-        <div class="quest-container">
-          <div id="question"></div>
-          <ul>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-          </ul>
-        </div>
-        <img
-          src="img/demonboss.png
-          alt="demonboss"
-          style="width: 300px; height: 200px"
-          />
-      </div> 
-
-      <div id="dkboss" hidden>
-        <div class="quest-container">
-          <div id="question"></div>
-          <ul>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-          </ul>
-        </div>
-        <img
-          src="img/dkboss.png
-          alt="dkboss"
-          style="width: 300px; height: 200px"
-          />
-      </div> 
-
-      <div id="dualboss" hidden>
-        <div class="quest-container">
-          <div id="question"></div>
-          <ul>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-            <li class="answers"></li>
-          </ul>
-        </div>
-        <img
-          src="img/dualboss.png"
-          alt="du"
-          style="width: 300px; height: 200px"
-          />
-      </div> 
-
-
+      <button id="play-game">Play Game</button>
+      <button data-pushbar-target="mypushbar1">How To Play</button>
       
-
-
-
-      <!-- <div class="quest-container">
-        <div id="question"></div>
-        <ul>
-          <li class="answers"></li>
-          <li class="answers"></li>
-          <li class="answers"></li>
-          <li class="answers"></li>
-        </ul>
-      </div> -->
-      <script src="app.js" async defer></script>
-      <script src="ghost.js" async defer></script>
-      
+      <div class="torch-img-wrapper">
+        <img src="img/torch.png" alt="" class="torch-image">
+      </div>
     </div>
-  </body>
+  </div>
+
+  <div class="backDoor">
+    <button id="enter-dungeon" onclick="document.location='index.html'" class="hidden">Enter the Dungeon</button>
+    <div class="door">
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+  <script>
+    const pushbar = new Pushbar({blur: true, overlay: true});
+    
+    let playGameButton = document.getElementById("play-game");
+    let doorElement = document.querySelector(".door");
+    let enterDungeonButton = document.getElementById("enter-dungeon");
+
+    playGameButton.addEventListener("click", toggleDoor);
+    playGameButton.addEventListener("click", toggleEnterDungeon);
+
+    function toggleDoor() {
+      doorElement.classList.toggle("doorOpen");
+    }
+
+    function toggleEnterDungeon() {
+      let currentClasses = enterDungeonButton.classList;
+      for(let i in currentClasses) {
+        if(currentClasses[i] === 'hidden') {
+          enterDungeonButton.classList.remove('hidden')
+        }
+      }
+    }
+  </script>
+</body>
 </html>
