@@ -91,16 +91,18 @@ footer {
 
 
 .quest-container{
-border: blanchedalmond;
-border-style: dashed;
+border: black;
+border-style: solid;
 display:list-item;
 display: inline-block;
 margin-top: 1px;
-background-color: darkmagenta;
+background-color: darkslategray;
+padding: 15px;
 }
 .quest-container li{
     position: relative;
-    color: cadetblue;
+    color:black;
+    padding: 3px;
 }
 
 .answers:hover {
