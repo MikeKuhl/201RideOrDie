@@ -1,12 +1,21 @@
 #startpage-body {
-  background-color: black
+  background-image: url('/img/brick.png');
 }
 
 #start-button-container {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#start-button-inner-container {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: -1;
 }
 
 button {
@@ -67,24 +76,28 @@ body, .pushy {
   position:relative;
   width:400px;
   height:300px;
-  
   margin: 0 auto;
-  margin-top:50px;
 }
 
 .door {
-  background-color: darkgray;
+  background-image: url('/img/door.png');
   position:absolute;
   top:0px;
   left:0px;
   width:400px;
   height:300px;
- 
   transform-origin: left;
- 
   transition: all 0.5s ease-in-out;
 }
 
 .doorOpen {
   transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+  transition-delay: 10ms;
+}
+
+#header {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  position: sticky;
 }
