@@ -31,7 +31,14 @@
     margin-bottom: 100px;
     z-index: 2;
 }
+#bossknight {
+    position: absolute;
+    left: 1050px;
+    margin-top: 1px;
+    margin-bottom: 100px;
+    z-index: 2;
 
+}
 #knight1 {
     position: relative;
     left: 2475px;
