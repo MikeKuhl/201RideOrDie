@@ -48,7 +48,7 @@
 
 body {
 
-    background: url('/img/dungeon.png') repeat-x ; 
+    background: url('./img/dungeon.PNG') repeat-x ;
     background-size: 100%;
     background-position-y: top;
     width: 5000px;
@@ -108,7 +108,7 @@ background-color: darkmagenta;
 }
 
 #gameover {
-    position: fixed; 
+    position: fixed;
     size: cover;
     z-index: 3;
     overflow:hidden;
