@@ -118,4 +118,9 @@ body, .pushy {
 
 a {
   color: antiquewhite;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
 }
