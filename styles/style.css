@@ -48,7 +48,7 @@
 
 body {
 
-    background: url('/img/dungeon.png') repeat-x ; 
+    background: url('./img/dungeon.png') repeat-x ; 
     background-size: 100%;
     background-position-y: top;
     width: 5000px;
