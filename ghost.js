@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 522b1f93239f01fe1818b86edac5441bbebdabf0
 let canMove = true;
 let keyPress = 0;
 let lives = 4;

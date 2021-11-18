@@ -1,5 +1,5 @@
 #startpage-body {
-  background-image: url('/img/brick.png');
+  background-image: url('../img/brick.png');
 }
 
 #start-button-container {
@@ -15,16 +15,15 @@
   align-items: center;
   justify-content: center;
   background-color: black;
-  z-index: -1;
 }
 
 button {
-    background-color:darkslategrey;
-    font-size: 40px;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 20px;
-    font-family: 'Road Rage';
+  background-color:darkslategrey;
+  font-size: 40px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Road Rage';
 }
 
 button:hover{
@@ -34,11 +33,10 @@ button:hover{
 
 .torch-img-wrapper {
   position: relative;
-  animation: pulse 0.4s ease infinite alternate
+  animation: pulse 0.4s ease infinite alternate;
 }
 
 .torch-image {
-  background-image: url('./../torch.png');
   height: 100px;
   width: 90px;
   margin: 20px;
@@ -67,20 +65,19 @@ body, .pushy {
   right: 320px;
 }
 
-/* .pushy {
-  right: 320px;
-} */
-
 .backDoor {
-  background-color: #333;
+  background-image: url('../img/hallway.gif');
   position:relative;
   width:400px;
   height:300px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .door {
-  background-image: url('/img/door.png');
+  background-image: url('../img/door.png');
   position:absolute;
   top:0px;
   left:0px;
@@ -100,4 +97,12 @@ body, .pushy {
   height: 80px;
   width: 100%;
   position: sticky;
+}
+
+.hidden {
+  display: none;
+}
+
+#enter-dungeon {
+  font-size: 20px;
 }
