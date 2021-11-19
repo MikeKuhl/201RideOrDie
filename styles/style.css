@@ -1,14 +1,14 @@
-#hotbod{
-    /* overflow: hidden; */
-}
 
 #character{
     position: relative;
     z-index: 1;
-    right: 13500px;
-    margin-top: 100px;
+    right: 14000px;
+    margin-top: 150px;
     transform: rotateY(180deg);
     animation: character 3s infinite linear;
+}
+#quest-container:first-child {
+    font-size: large;
 }
 
 #lives{
@@ -18,17 +18,17 @@
 }
 
 @keyframes character{
-    0%{top: 125px}
-    50%{top: 75px}
-    100%{top: 125px}
+    0%{top: 150px}
+    50%{top: 125px}
+    100%{top: 150px}
 
 }
 
 #knight {
     position: absolute;
     left: 1050px;
-    margin-top: 1px;
-    margin-bottom: 100px;
+    margin-top: -10%;
+    margin-bottom: 200px;
     z-index: 2;
 }
 
@@ -38,7 +38,7 @@ body {
     background: url('https://mikekuhl.github.io/201Undefined/img/dungeon.png') repeat-x ;
     background-size: 100%;
     background-position-y: top;
-    width: 14000px;
+    width: 14500px;
 }
 
 #startButton {
@@ -85,7 +85,14 @@ display: inline-block;
 margin-top: 1px;
 background-color: darkslategray;
 padding: 15px;
+animation: quest-container 5s infinite;
 }
+@keyframes quest-container {
+    25% {background-color: darkslategray;}
+    50% {background-color: darkslateblue;}
+    75% {background-color: darkolivegreen;}
+    100%  {background-color: darkslategray;}
+  }
 
 #quest-container li{
     position: relative;
@@ -131,7 +138,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 425px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .wrapper1 {
     width: 100%;
@@ -139,7 +146,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 1150px;
-    margin-top: 199px;
+    margin-top: 150px;
 
 }
 .wrapper2 {
@@ -148,7 +155,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 1865px;
-    margin-top: 198px;
+    margin-top: 150px;
 
 }
 .wrapper3 {
@@ -157,7 +164,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 1865px;
-    margin-top: 198px;
+    margin-top: 150px;
 
 }
 .wrapper4 {
@@ -166,7 +173,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 2579px;
-    margin-top: 190px;
+    margin-top: 150px;
 
 }
 .wrapper5 {
@@ -175,7 +182,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 3300px;
-    margin-top: 190px;
+    margin-top: 150px;
 
 }
 .wrapper6 {
@@ -184,7 +191,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 4015px;
-    margin-top: 190px;
+    margin-top: 150px;
 
 }
 .wrapper7 {
@@ -193,7 +200,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 4725px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 .wrapper8 {
     width: 100%;
@@ -201,7 +208,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 5450px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 .wrapper9 {
     width: 100%;
@@ -209,7 +216,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 6175px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 .wrapper10 {
     width: 100%;
@@ -217,7 +224,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 6880px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 .wrapper11 {
     width: 100%;
@@ -225,7 +232,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 7600px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 .wrapper12 {
     width: 100%;
@@ -233,7 +240,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 8325px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 .wrapper13 {
     width: 100%;
@@ -241,7 +248,7 @@ padding: 15px;
     position: absolute;
     display: block;
     margin-left: 9030px;
-    margin-top: 190px;
+    margin-top: 150px;
 }
 
 .red {

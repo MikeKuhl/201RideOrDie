@@ -58,7 +58,7 @@ function handleClick(event) {
 
   console.log("target id" , event.target.id)
   if(event.target.id === 'correct'){ 
-    
+    document.getElementById("knight").hidden = true;
     canMove = true;
     ask.innerHTML = ""
   } else if (event.target.id !== 'correct') {
@@ -188,7 +188,7 @@ function posPrompt() {
     question8.render();
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
-    document.getElementById("knight").style.marginLeft =  + 8675 + 'px';
+    document.getElementById("knight").style.marginLeft =  + 10000 + 'px';
     canMove = false;
   }
   if (keyPress === 296) {
@@ -196,7 +196,7 @@ function posPrompt() {
     question9.render();
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
-    document.getElementById("knight").style.marginLeft =  + 10151 + 'px';
+    document.getElementById("knight").style.marginLeft =  + 11500 + 'px';
     canMove = false;
   }
   if (keyPress === 331) {
@@ -204,12 +204,13 @@ function posPrompt() {
     question10.render();
     hotbod.style.overflow = "hidden";
     document.getElementById("knight").hidden = false;
-    document.getElementById("knight").style.marginLeft =  + 11621 + 'px';
+    document.getElementById("knight").style.marginLeft =  + 12900 + 'px';
     canMove = false;
   }
 }
+
 function setUp(){
   let ask = document.getElementById('quest-container');
   ask.addEventListener('click' , handleClick);
 }
-setUp()
+setUp();
