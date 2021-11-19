@@ -106,3 +106,21 @@ body, .pushy {
 #enter-dungeon {
   font-size: 20px;
 }
+
+#github {
+  width: fit-content;
+  color: antiquewhite;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: fixed;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
